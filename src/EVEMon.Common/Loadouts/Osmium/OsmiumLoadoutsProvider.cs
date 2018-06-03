@@ -165,13 +165,13 @@ namespace EVEMon.Common.Loadouts.Osmium
                     .Select(serialLoadout =>
                         new Loadout
                         {
-                            ID = serialLoadout.ID,
-                            Name = serialLoadout.Name,
-                            Description = serialLoadout.RawDescription,
-                            Author = serialLoadout.Author.Name,
-                            Rating = serialLoadout.Rating,
-                            SubmissionDate = serialLoadout.CreationDate.UnixTimeStampToDateTime(),
-                            TopicUrl = new Uri(serialLoadout.Uri),
+                            ID = serialLoadout.id,
+                            Name = serialLoadout.name,
+                            Description = serialLoadout.rawdescription,
+                            Author = serialLoadout.author.name,
+                            Rating = serialLoadout.rating,
+                            SubmissionDate = serialLoadout.creationdate.UnixTimeStampToDateTime(),
+                            TopicUrl = new Uri(serialLoadout.uri),
                             Items = Enumerable.Empty<Item>()
                         }));
 

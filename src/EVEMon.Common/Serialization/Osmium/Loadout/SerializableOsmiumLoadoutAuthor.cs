@@ -2,8 +2,8 @@
 {
     public sealed class SerializableOsmiumLoadoutAuthor
     {
-        public string Type { get; set; }
+        public string type { get; set; }
 
-        public string Name { get; set; }
+        public string name { get; set; }
     }
 }

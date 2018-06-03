@@ -5,26 +5,26 @@ namespace EVEMon.Common.Serialization.Osmium.Loadout
 {
     public sealed class SerializableOsmiumLoadoutFeed
     {
-        public long ID => Int64.Parse(Uri.Replace($"{NetworkConstants.OsmiumBaseUrl}/loadout/", String.Empty));
+        public long id => System.Int64.Parse(uri.Replace($"{NetworkConstants.OsmiumBaseUrl}/loadout/", String.Empty));
 
-        public string Uri { get; set; }
+        public string uri { get; set; }
 
-        public string Name { get; set; }
+        public string name { get; set; }
 
-        public int ShipTypeID { get; set; }
+        public int shiptypeid { get; set; }
 
-        public string ShipTypeName { get; set; }
+        public string shiptypename { get; set; }
 
-        public SerializableOsmiumLoadoutAuthor Author { get; set; }
+        public SerializableOsmiumLoadoutAuthor author { get; set; }
 
-        public long CreationDate { get; set; }
+        public long creationdate { get; set; }
 
-        public string RawDescription { get; set; }
+        public string rawdescription { get; set; }
 
-        public int UpVotes { get; set; }
+        public int upvotes { get; set; }
 
-        public int DownVotes { get; set; }
+        public int downvotes { get; set; }
 
-        public int Rating => UpVotes - DownVotes;
+        public int rating => upvotes - downvotes;
     }
 }

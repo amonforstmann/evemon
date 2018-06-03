@@ -470,7 +470,7 @@
     <value>tcp://time.nist.gov:13</value>
   </data>
   <data name="OsmiumBaseUrl" xml:space="preserve">
-    <value>https://o.smium.org</value>
+    <value>https://fits.federatis.fr</value>
   </data>
   <data name="OsmiumLoadoutFeed" xml:space="preserve">
     <value>/api/json/loadout/query/{0}?limit=50&amp;sortby=creationdate</value>
